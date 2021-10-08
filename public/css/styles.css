@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+}
 header {
     background-color: #EAC926;
     color : black;
@@ -5,11 +9,27 @@ header {
     text-align: left;
     font-size: 12px;
     line-height: 10px;
+    height: 300px;
+}
+header img{
+    width:150px;
+    height:80px;
+    padding-left: 20px; 
+}
+header input{
+    margin-left: 20px;
+}
+header button{
+    margin-left: 20px;
 }
 header ul li a{
     text-decoration: none;
     color: black;
     text-align: left;
+    margin: 0px;
+}
+li a{
+    padding-left: 5px;
 }
 h3{
     color : black;
@@ -35,14 +55,21 @@ h3{
 }
 .burger-menu{
     color: white;
-    background-color:#1259c3 ;
-    background-image:unset;
     text-align: center;
-    font-size: 2em;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 6px 6px 6px 6px;
+    margin-left: 180px;
+    margin-bottom: 30px;
+    background-color: blue;
 }
 
 footer article p{
+    margin-top: 2px;
     padding: 0px;
+    margin-bottom: 40px;
     color : #666;
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -50,6 +77,8 @@ footer article p{
     line-height: 10px;
 }
 .h4 {
+    margin-top: 10px;
+    margin-bottom:5px;
     padding: 0px;
     color : #666;
     font-family: 'Roboto', sans-serif;
