@@ -14,35 +14,77 @@ header {
     font-family: 'Roboto', sans-serif;
     text-align: left;
     font-size: 12px;
-    line-height: 10px;
-    height: 200px;
+    height: 170px;
+    
 }
+
 header img{
     width:150px;
     height:80px;
-    padding-left: 20px; 
 }
 header input{
     margin-left: 20px;
 }
+.top-nav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.im{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+   
+}
+.search{
+    display: flex;
+    align-items: center;
+    align-self:auto;
+    flex-direction: row;
+}
+#searchbar{
+    margin: 0px;
+}
+.centro{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    align-self: center;
+    height: 40px;
+}
 header button{
-    margin-left: 20px;
+    margin-left: 0px;
 }
 header ul li a{
     text-decoration: none;
     color: black;
     text-align: left;
     margin: 0px;
+    display: none;
 }
 li a{
     padding-left: 5px;
 }
+.nada{
+    display: none;
+
+}
 h3{
-    color : black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
+    color : #666;
+    align-self: flex-start;
+    margin-left: 50px;
 }
 h4 {
+    display: flex;
     margin-top: 10px;
     margin-bottom:5px;
     padding: 0px;
@@ -51,28 +93,9 @@ h4 {
     font-size: 16px; 
     font-weight: bold;
 }
-main{
-    width: 90vw;
-    margin: auto;
-    background-color: #ebebeb;
-}
 
-.precios{
-    color : black;
-    font-family: 'Roboto', sans-serif; 
-    font-size: 18px;
-}
-.descuentos{
-    color : black;
-    font-family: 'Roboto', sans-serif; 
-    font-size: 16px;
-}
-.centro{
-    color : black;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 12px; 
-}
+
+
 .burger-menu{
     color: white;
     text-align: center;
@@ -82,11 +105,20 @@ main{
     height: 30px;
     padding: 6px 6px 6px 6px;
     margin: auto;
-    background-color: blue;
+    margin-top: 15px;
+    background-color: #1259c3;
+    
+}
+.contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 footer{
     background-color: white;
+    padding-top: 10px;
+    padding-bottom: 1px;
 }
 footer article p{
     margin-top: 2px;
@@ -122,42 +154,228 @@ footer article p{
     line-height: 10px;
 }
 .descripcion{
+    display: flex;
+    flex-wrap: wrap;
     background-color: white;
     border-top: #ebebeb 1px solid;
     padding: 15px;
     width: 100%;
 }
-.imagen{
-    width: 100%;
-    height: 100%;
+.precios{
+    display: flex;
+    color : black;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    align-items: center;
+    width: 22%;
 }
-.img-env{
-    color: green;
-    border: green 1px solid;
-    border-radius: 200px;
-    padding-left: 5px;
-    padding-top: 3px;
-    padding-bottom: 15px;
-    width: 40px;
-}
-@media(max-width : 769px){
-    h4{
-        display: none;
-    }
-    header ul li a,
-    .nada{
-        display: none;
-    }
+.descuentos{
+    display: flex;
+    padding-left: 10px;
+    color: #39b54a;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 14px;
+    align-items: center;
+    width: 70%;
 }
 
+.imagen1{
+   width: 100%;
+}
+.imagen{
+width: 100%;
+}
+.img-env{
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    text-align: right;
+}
+.main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.47);
+        border-radius: 20px;
+        width: 90%;            
+        margin-bottom: 5px;
+}
+@media(min-width : 480px){
+    .top-nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+        header{
+            height: 120px;
+            font-size: 18px;
+        }
+        #searchbar{
+            width: 100%;
+        }
+        .search{
+            width: 25%;
+        }
+        .centro{
+            width: 25%;
+            display: flex;
+            font-size: 10px;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .burger-menu{
+            display: none;
+        }
+        h4{
+            display: block;
+        }
+        header ul li a{
+            display: flex;
+        }
+        .none{
+            width: 45%;
+        }
+        .none li{
+            width: 30%;
+        }
+        .nada{
+            display: flex;
+            justify-content: space-around;
+            font-size: 9px;
+        }
+        .nada-izq{
+            display: flex;
+        }
+        .nada-der{
+            display: flex;
+        }
+        .nada ul{
+            display: flex;
+            width: 45%; 
+        }
+        .nada ul li{
+            margin: 0px;
+            padding: 5px;
+            font-size: 9px;
+        }
+        .nada li {
+            justify-content: space-evenly;
+        }
+        .nada ul li i{
+            padding-left: 2px;
+        }
+        .contenido{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; 
+    }
+        .main{
+            width: 46%; 
+    }
+    .precios{
+        width: 40%;
+    }
+    .descuentos{
+width: 60%;
+    }
+        footer{
+            margin-top: 20px;
+    }
+}
 @media(min-width : 769px){
+.top-nav{
+    display: flex;
+    justify-content: space-around;
+}
     header{
-        height: 255px;
+        height: 150px;
+        font-size: 18px;
+    }
+    .im{
+        width: 30%;
+        height: 30%;
     }
     main{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main{
+        width: 23%;
+    }
+    .centro{
+        width: 40%;
+        display: flex;
+        font-size: 20px;
+    }
+    .nada ul li{
+        font-size: 15px;
+    }
+    .nada-izq{
+        display: flex;
+        justify-content: left;
+    }
+    .nada-der{
+        display: flex;
+        justify-content: right;
     }
     .burger-menu{
         display: none;
+    }
+    h4{
+        display: block;
+    }
+    header ul li a{
+        display: flex;
+    }
+    
+    .imagen1{
+        height: 35vh;
+    }
+    h3{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color : #666;
+    align-self: flex-start;
+    margin-left: 50px;
+    }
+    .precios{
+        width: 44%;
+    }
+    .descuentos{
+        width: 50%;
+    }
+}
+
+ @media(min-width: 1200px){
+     body{
+         max-width: 1200px;
+         margin: auto;
+     }
+     .contenido{
+         max-width: 1200px;
+         display: flex;
+     }
+     .precios{
+        width: 30%;
+    }
+    .descuentos{
+        width: 50%;
     }
 }

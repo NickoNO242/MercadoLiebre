@@ -11,46 +11,47 @@
 </head>
 <body>
     <header>
-        <section>
-            <img src = "./images/logo-mercado-liebre.svg" alt ="logo">
+        <section class="top-nav">
+            <img class="im" src = "./images/logo-mercado-liebre.svg" alt ="logo">
+            <div class="search">
+            <input id="searchbar"  type="text"
+            name="search" placeholder="Buscar Productos.."><button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="centro">
+                <p><i class="fas fa-hand-holding-usd"></i>Compre a cuotas y sin tarjeta de credito</p>
+            </div>
         </section>
-        <div>
-        <input id="searchbar"  type="text"
-        name="search" placeholder="Buscar Productos..">
-        </div>
-        <div>
-            <button><i class="fas fa-search"></i></button>
-        </div>
-            <p class="centro"><i class="fas fa-hand-holding-usd"></i>Compre a cuotas y sin tarjeta de credito</p>
-            <ul type = "none">
+        
+        <div class="nada">
+            <ul class="nada-izq" type = "none">
                 <li><a href="#">Ofertas</a></li>
                 <li><a href="#">Tiendas Oficiales</a></li>
                 <li><a href="#">Vender</a></li>
                 <li><a href="#">Ayuda</a></li>
             </ul>
-            <ul class="nada" type = "none">
-                <li><a href="#">Crea tu cuenta</a><i class="far fa-id-card"></i></li>
-                <li><a href="#">Ingresa</a><i class="fas fa-sign-in-alt"></i></li>
-                <li><a href="#">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+            <ul class="nada-der" type = "none">
+                <li><a href="#">Crea tu cuenta<i class="far fa-id-card"></i></a></li>
+                <li><a href="#">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
             </ul>
         </div>
         <div class="burger-menu" >
             <i class="fas fa-bars"></i>
     </header>
-    <section>
-        <img class="imagen" src="./images/img-home-banner.jpg" alt="">
+    <section >
+        <img class="imagen1"  src="./images/img-home-banner.jpg" alt="">
     </section>
     <main>
-        <section>
-         <h3>Basado en lo ultimo que viste</h3>
+        <section class="contenido">
+            <h3>Basado en lo ultimo que viste</h3>
              <article class="main">
                 <ul type = "None">
                  <img class="imagen" src = "./images/img-cafetera-moulinex.jpg" alt ="Imagen Cafetera"> 
                  <div class="descripcion">
-                     <div class="img-env" ><li><i class="fas fa-truck"></i></li></div>
+                    <li class="img-env"><i class="fas fa-truck"></i></li>
                     <li class="precios"> $6.770</li>
-                    <li class="descuentos"> 40% OFF</li> 
-                    <h4> Cafetera Moulinex</h4>
+                    <li class="descuentos"> 40% OFF</li>
+                        <h4> Cafetera Moulinex</h4>
                  </div>
                 </ul>
             </article>
@@ -88,17 +89,17 @@
                 </ul>
             </article>
         </section>
-        <main>
-            <section>
-             <h3>Seccion de Ofertas</h3>
+            <section class="contenido">
+                <h3>Seccion de Ofertas</h3>
                  <article class="main">
                     <ul type = "None">
                      <img class="imagen" src = "./images/img-cafetera-moulinex.jpg" alt ="Imagen Cafetera"> 
                      <div class="descripcion">
                         <div class="img-env" ><li><i class="fas fa-truck"></i></li></div>
                         <li class="precios"> $6.770</li>
-                        <li class="descuentos"> 40% OFF</li> 
+                        <li class="descuentos"> 40% OFF</li>
                         <h4> Cafetera Moulinex</h4>
+                        
                      </div>
                     </ul>
                 </article>
@@ -135,7 +136,8 @@
                      </div> 
                     </ul>
                 </article>
-            </section>        
+            </section>   
+        </main>     
     <footer>
         <article>
             <div class="img-fn" >
