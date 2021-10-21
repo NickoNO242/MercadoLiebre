@@ -16,6 +16,7 @@
             <form id="form"  action="#" method="GET">
                 <label class="form">
                     <input class="form-search" type="text" placeholder="Buscar Productos..." >
+                    <span class="feedback"></span>
                     <button class="submit"><i class="fa fa-search"></i></button>
                 </label>
             </form>
@@ -44,15 +45,20 @@
     <form action="/register" method="POST" class="register-form">
         <label class="control-label" for = "name" >Nombre Completo:</label>
             <input class="input-control" type="text" name="name" id="name" required>
+            <span class="feedback"></span>
         <label class="control-label" for = "username" >Nombre de Usuario:</label>
             <input class="input-control" type="text" name="username" id="username" required>
+            <span class="feedback"></span>
         <label class="control-label" for = "datebirth" >Fecha de Nacimiento:</label>
             <input class="input-control" type="date" name="datebirth" id="datebirth" required>
+            <span class="feedback"></span>
         <label class="control-label" for = "address" >Dirección:</label>
             <input class="input-control" type="text" name="address" id="address" required>
+            <span class="feedback"></span>
         <label class="control-label" for="user-profile" >Perfil Deseado:</label>
             <input  type="radio" name="user-profile" value="user-profile">Comprador
             <input  type="radio" name="user-profile"value="user-profile">Vendedor
+            <span class="feedback"></span>
         <label class="control-label" for="interest-categories" >Intereses:</label>    
             <input  type="checkbox" name="interest-categories" value="interest-categories">Electrodomésticos
             <input  type="checkbox" name="interest-categories"value="interest-categories">Moda
@@ -63,8 +69,10 @@
             <input class="input-control" type="file" name="picture" id="picture" > 
         <label class="control-label" for="password" >Contraseña:</label>
             <input class="input-control" type="password" name="password" id="password"required >
+            <span class="feedback"></span>
         <label class="control-label" for="confirm-password" >Confirmar Contraseña:</label>
             <input class="input-control" type="password" name="confirm-password" id="confirm-password" required >
+            <span class="feedback"></span>
             <div class="high-button">
                 <button class="button" type="submit"><a class="lk" href="/">Enviar</a></button>
                 <button class="button" type="reset" >Borrar</button>
@@ -73,25 +81,31 @@
     </form>
 
     <footer>
-        <article>
+        <article class="footer">
+          <div class="footer-square">
             <div class="img-fn" >
                 <i class="fas fa-credit-card"></i>
             </div>
                 <p class="h4">Pagá con tarjeta o en efectivo</p>
                 <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
                     puntos de pago. ¡Y siempre es seguro!</p>
-             <div class="img-fn" >
+          </div>
+            <div class="footer-square">
+                <div class="img-fn" >
                     <i class="fas fa-gift"></i>
              </div>
                 <p class="h4">Envío gratis desde $ 2.500</p>
                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
                    productos. Es un beneficio de Mercado Puntos. </p>
+            </div>
+            <div class="footer-square">
                 <div class="img-fn" >
                     <i class="fas fa-user-shield"></i>
                 </div>
                 <p class="h4">Seguridad, de principio a fin</p>
                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
                  porque estás siempre protegid@.</p>
+            </div> 
         </article>
     </footer>
     <p class="cr">Copyright © 1999-2020 MercadoLiebre S.R.L</p>
