@@ -37,17 +37,28 @@ header input{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    
-   
+
 }
-.search{
+#form{
+    display: flex;
+}
+.form{
     display: flex;
     align-items: center;
     align-self:auto;
     flex-direction: row;
+    padding: 5px 0px;
 }
-#searchbar{
-    margin: 0px;
+.form-search{
+    display: flex;
+    align-items: center;
+    align-self:auto;
+    flex-direction: row;
+    padding: 5px 0px;
+}
+.submit{
+    display: flex;
+    padding: 6px 0px;
 }
 .centro{
     display: flex;
@@ -161,6 +172,7 @@ footer article p{
     padding: 15px;
     width: 100%;
     position: relative;
+
 }
 .precios{
     display: flex;
@@ -241,6 +253,14 @@ width: 100%;
     display: flex;
     font-size: 15px;
 }
+.button:hover{
+    background-color: #0022AA;
+    border-style: outset;
+    border: gray 1px solid;
+    border-radius: 10px;
+    padding: 4px;
+    
+}
 .lk{
     text-decoration: none;
     color: black;
@@ -258,9 +278,7 @@ width: 100%;
         #searchbar{
             width: 100%;
         }
-        .search{
-            width: 25%;
-        }
+       
         .centro{
             width: 25%;
             display: flex;
@@ -292,10 +310,30 @@ width: 100%;
         .nada{
             display: flex;
             justify-content: space-around;
-            font-size: 9px;
+            font-size: 9px; 
+           
         }
         .nada-izq{
             display: flex;
+        }
+        .nada-der a, .nada-izq a{
+            transition: all 200ms;
+        }
+        .nada-der a:hover{
+            border-style: outset;
+            border: gray 1px solid;
+            border-radius: 10px;
+            padding: 4px;
+            color: white;
+            background-color: #1259c3 ;
+        }
+        .nada-izq a:hover{
+            border-style: outset;
+            border: gray 1px solid;
+            border-radius: 10px;
+            padding: 4px;
+            color: white;
+            background-color: #1259c3 ;
         }
         .nada-der{
             display: flex;
@@ -373,11 +411,14 @@ width: 60%;
         display: none;
     }
     h4{
-        display: none;
+       opacity: 0;
+       transition: all 250ms;
     }
+    
     article .descripcion:hover h4{
-            display: block;
+            opacity: 1;
     }
+    
     header ul li a{
         display: flex;
     }
@@ -408,8 +449,25 @@ width: 60%;
     padding: 5px;
 }
 }
-
-
+.footer{
+    display: flex;
+}
+.footer-square{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.footer-square p{
+    font-size: 15px;
+    line-height: 19px;
+}
+.img-fn{
+    transition: all 300ms;
+}
+.img-fn:hover{
+    color:#EAC926 ;
+    font-size: 3em;
+}
  @media(min-width: 1200px){
      body{
          max-width: 1200px;
