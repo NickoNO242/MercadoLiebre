@@ -235,7 +235,7 @@ width: 100%;
 
 .register-form{
     font-family: 'Times New Roman', Times, serif;
-    width: 50% ;
+    width: 80% ;
     padding: 20px 15px;
     font-size: 20px;
     margin: auto;
@@ -246,19 +246,20 @@ width: 100%;
 }
 .login-form{
     font-family: 'Times New Roman', Times, serif;
-    width: 30% ;
+    width: 70%;
     padding: 20px 15px;
     font-size: 20px;
-    margin: auto;
     background-color: rgb(219, 214, 214);
     border: rgb(194, 191, 191) 1px solid;
     border-radius: 10px;
     margin-top: 10px;
+    margin: auto;
 }
+lll
 .control-label{
-    display: block;
+    display: flex;
     padding: 5px;
-    width: 95%;
+    width: 90%;
     margin: auto;
 }
 #footer-login{
@@ -311,7 +312,7 @@ width: 100%;
         .centro{
             width: 25%;
             display: flex;
-            font-size: 10px;
+            font-size: 15px;
             flex-direction: row;
             align-items: center;
             flex-wrap: wrap;
@@ -339,14 +340,14 @@ width: 100%;
         .nada{
             display: flex;
             justify-content: space-around;
-            font-size: 9px; 
-           
+            font-size: 9px;   
         }
         .nada-izq{
             display: flex;
         }
         .nada-der a, .nada-izq a{
             transition: all 200ms;
+            font-size: 12px;
         }
         .nada-der a:hover{
             border-style: outset;
@@ -389,6 +390,21 @@ width: 100%;
     }
         .main{
             width: 46%; 
+    }
+    
+    .control-label{
+        display: block;
+    }
+    .login-form{
+        font-family: 'Times New Roman', Times, serif;
+        width: 50% ;
+        padding: 20px 15px;
+        font-size: 20px;
+        margin: auto;
+        background-color: rgb(219, 214, 214);
+        border: rgb(194, 191, 191) 1px solid;
+        border-radius: 10px;
+        margin-top: 10px;
     }
     .precios{
         width: 40%;
@@ -439,6 +455,9 @@ width: 60%;
     .nada-der{
         display: flex;
         justify-content: right;
+    }
+    .nada-der a, .nada-izq a{
+        font-size: 18px;
     }
     .burger-menu{
         display: none;
@@ -492,6 +511,7 @@ width: 60%;
     display: flex;
     flex-direction: column;
     margin: 50px;
+    margin-bottom: 20px;
 }
 .footer-square p{
     font-size: 15px;
